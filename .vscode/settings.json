@@ -1,0 +1,8 @@
+{
+    // Prettier
+    "editor.formatOnSave": true,
+    "prettier.eslintIntegration": true,
+    "[less]": {
+        "editor.formatOnSave": true
+    }
+}
