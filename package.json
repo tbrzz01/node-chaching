@@ -67,5 +67,8 @@
   "jest": {
     "testEnvironment": "node"
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "node-cache": "^4.2.1"
+  }
 }

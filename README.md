@@ -1,4 +1,5 @@
 # node-chaching [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+
 > Reusable caching class for node
 
 ## Installation
@@ -10,14 +11,22 @@ $ npm install --save node-chaching
 ## Usage
 
 ```js
-const nodeChaching = require('node-chaching');
+const Cache = require('node-chaching');
 
-nodeChaching('Rainbow');
+// create a new Cache instance with a 10 sec TTL and a get Promise
+// that provides values when a cache miss occurs
+const myCache = new Cache(10, (key) => Promise.resolve({key, value: 10}));
+
+// retrieve value for given key
+const value = await myCache.get('key-1');
+
+// delete key and its value from cache
+myCache.del('key-1');
 ```
+
 ## License
 
 Apache-2.0 © [Trey Briggs](http://treybriggs.com/)
-
 
 [npm-image]: https://badge.fury.io/js/node-chaching.svg
 [npm-url]: https://npmjs.org/package/node-chaching
