@@ -1,0 +1,71 @@
+{
+  "name": "node-chaching",
+  "version": "0.0.0",
+  "description": "Reusable caching class for node",
+  "homepage": "https://github.com/tebriggs86/node-chaching",
+  "author": {
+    "name": "Trey Briggs",
+    "email": "tebriggs86@gmail.com",
+    "url": "http://treybriggs.com/"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    "npm",
+    "node",
+    "caching",
+    "cache",
+    "reusable"
+  ],
+  "devDependencies": {
+    "coveralls": "^3.0.5",
+    "eslint": "^6.0.1",
+    "prettier": "^1.18.2",
+    "husky": "^3.0.1",
+    "lint-staged": "^9.2.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-config-xo": "^0.26.0",
+    "jest": "^24.8.0"
+  },
+  "engines": {
+    "npm": ">= 4.0.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "xo",
+      "prettier"
+    ],
+    "env": {
+      "jest": true,
+      "node": true
+    },
+    "rules": {
+      "prettier/prettier": "error"
+    },
+    "plugins": [
+      "prettier"
+    ]
+  },
+  "scripts": {
+    "pretest": "eslint .",
+    "test": "jest"
+  },
+  "repository": "https://github.com/tebriggs86/node-chaching.git",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "license": "Apache-2.0"
+}

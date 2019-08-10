@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Trey Briggs",
+      "authorEmail": "tebriggs86@gmail.com",
+      "authorUrl": "http://treybriggs.com/"
+    }
+  }
+}
