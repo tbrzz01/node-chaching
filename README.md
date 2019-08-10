@@ -1,6 +1,6 @@
 # node-chaching [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 
-> Reusable caching class for node
+> Reusable single-purpose caching class for node
 
 ## Installation
 
