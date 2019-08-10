@@ -1,6 +1,6 @@
 {
   "name": "node-chaching",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Reusable caching class for node",
   "homepage": "https://github.com/tebriggs86/node-chaching",
   "author": {

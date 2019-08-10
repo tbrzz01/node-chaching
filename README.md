@@ -17,8 +17,15 @@ const Cache = require('node-chaching');
 // that provides values when a cache miss occurs
 const myCache = new Cache(10, (key) => Promise.resolve({key, value: 10}));
 
+const args = {
+  key: 'key-1',
+  options: {
+    opt1: [],
+    opt2: 'opt2'
+  }
+};
 // retrieve value for given key
-const value = await myCache.get('key-1');
+const value = await myCache.get(args);
 
 // delete key and its value from cache
 myCache.del('key-1');
